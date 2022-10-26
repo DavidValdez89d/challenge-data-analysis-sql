@@ -59,29 +59,29 @@ df_filtered_data = df.query(
 #Title
 #st.title("SQL Dashboard")
 st.markdown("# SQL Dashboard")
-st.markdown("## Title")
-st.markdown("* Description text")
+#st.markdown("## Title")
+#st.markdown("* Description text")
 
 #Section1-----------------------------------------
-col_a, col_b = st.columns(2)
+st.markdown('## Must-have features')
+col_a, col_b, col_c, col_d = st.columns(4)
 with col_a:
-     st.markdown("### Column A")
-     st.markdown("* Description text")
-     st.markdown("* Description text")
+     st.markdown("### Question 1")
+     st.markdown("**Which percentage of the companies are under which juridical form?**")
+     st.markdown("Response")
 with col_b:
-     st.markdown("### Column B")
-     st.markdown("* Description text")
-     st.markdown("* Description text")
-#column_1, column_2, column_3 = st.columns(3)
-#with column_1:
-#    st.subheader("Total companies:")
-#    st.subheader(f"#")
-#with column_2:
-#    st.subheader("?:")
-#    st.subheader(f"?")
-#with column_3:
-#    st.subheader("average company's age in each sector")
-#    st.subheader(f"years")
+     st.markdown("### Question 2")
+     st.markdown("**Which percentage of the companies are under which Status?**")
+     st.markdown("Response")
+with col_c:
+     st.markdown("### Question 3")
+     st.markdown("**Which percentage of the companies are which type of entreprise?**")
+     st.markdown("Response")
+with col_d:
+     st.markdown("### Question 4")
+     st.markdown("**What is the average company's age in each sector (hint: look what is the NACE code)?**")
+     st.markdown("Response")
+
 
 st.markdown("---")
 #Section2-----------------------------------------
